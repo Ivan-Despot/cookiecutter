@@ -12,4 +12,24 @@ if [ ! -d "1$"]; then
 fi
 
 cd $1
-mkdir doc data results src bin
+mkdir doc data results src bin  # add folders 
+
+cd doc
+echo "Directory for manuscripts, source code documentation, etc."
+touch .gitkeep
+
+cd ../data
+echo "Directory for raw and meta data - no computations."
+touch .gitkeep
+
+cd ../results
+echo "Directory for intermediate and final results, as well as cleaned data sets."
+touch .gitkeep
+
+cd ../src
+echo "Directory for project source code"
+touch .gitkeep
+
+cd ../bin
+echo "Directory for external scripts, compiled programs etc."
+tocu .gitkeep
