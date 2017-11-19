@@ -5,15 +5,12 @@
 # Go to the directory where you want to set up the folder structures
 # run in console: bash cookiecutter.sh /directory/to/where/your/project/is
 
-echo "Setting up directories in $1"
+echo "Please enter project name."
+read root
 
-if [ ! -d "1$"]; then
-  mkdir $1
-fi
-
-cd $1
+mkdir $root
+cd $root
 mkdir doc data results src bin  # add folders
-
 
 # as a template it is useful to see what each directory is for - add simple explanation
 cd doc
@@ -35,6 +32,15 @@ touch .gitkeep
 cd ../bin
 echo "Directory for external scripts, compiled programs etc."
 touch .gitkeep
+
+cd ..
+
+touch citations.md
+touch contributions.md
+touch conduct.md
+touch .gitignore
+touch requirements.txt
+touch LICENSE.md
 
 echo "Data science project template created"
 cd ..
