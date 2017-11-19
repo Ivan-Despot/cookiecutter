@@ -35,3 +35,6 @@ touch .gitkeep
 cd ../bin
 echo "Directory for external scripts, compiled programs etc."
 touch .gitkeep
+
+echo "Data science project template created"
+cd ..
