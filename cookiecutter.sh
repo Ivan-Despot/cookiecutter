@@ -12,8 +12,10 @@ if [ ! -d "1$"]; then
 fi
 
 cd $1
-mkdir doc data results src bin  # add folders 
+mkdir doc data results src bin  # add folders
 
+
+# as a template it is useful to see what each directory is for - add simple explanation
 cd doc
 echo "Directory for manuscripts, source code documentation, etc."
 touch .gitkeep
@@ -32,4 +34,4 @@ touch .gitkeep
 
 cd ../bin
 echo "Directory for external scripts, compiled programs etc."
-tocu .gitkeep
+touch .gitkeep
